@@ -24,6 +24,7 @@ interface MyInt {
             instance = new MySmallInt(v);
         }
         
+        
         return instance;
     }
 
