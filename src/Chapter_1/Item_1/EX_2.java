@@ -12,9 +12,9 @@ class Foo_Public {
         this.name = name;
     }
 
-    public Foo_Public(String address) {
-
-    }
+//    public Foo_Public(String address) {
+//
+//    }
 }
 
 class Foo_Static {
@@ -29,7 +29,8 @@ class Foo_Static {
     }
 
     public static Foo_Static withAddress(String address) {
-        ...
+//        ...
+        return null;
     }
 }
 
@@ -49,3 +50,4 @@ class Foo_Static2 {
         return foo_static2;
     }
 }
+
