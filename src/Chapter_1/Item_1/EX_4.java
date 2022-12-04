@@ -11,6 +11,8 @@ public class EX_4 {
         //이때 내부적으로 원소가 64개 이하면 RegularEnumSet 인스턴스 반환,
         //65개 이상이면 JumboEnumSet 인스턴브 반환
         EnumSet<Alphabet> alphabets = EnumSet.allOf(Alphabet.class);
+        System.out.println(MyInt.of(50).getValue());
+        System.out.println(MyInt.of(150).getValue());
     }
 }
 
@@ -23,8 +25,6 @@ interface MyInt {
         } else {
             instance = new MySmallInt(v);
         }
-        
-        
         return instance;
     }
 
