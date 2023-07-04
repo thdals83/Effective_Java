@@ -16,6 +16,7 @@ package Chapter_1.Item_2;
 class NutritionFacts {
     private final int servingSize; //필
     private final int servings;    //필  
+    
     private final int calories;    //선
     private final int fat;         //선
     private final int sodium;      //선

@@ -30,6 +30,10 @@ class NutritionFacts3 {
         carbohydrate = builder.carbohydrate;
     }
     
+    public static Builder builder(int servingSize, int servings) {
+        return new Builder(servingSize, servings);
+    }
+    
     public static class Builder {
         //필수 매개변수
         private final int servingSize;
@@ -74,7 +78,8 @@ class NutritionFacts3 {
 
 class test3 {
     public static void main(String[] args) {
-        NutritionFacts3 cocaCola = new NutritionFacts3.Builder(240, 8)
+        NutritionFacts3 cocaCola = NutritionFacts3
+                .builder(240, 8)
                 .calories(100)
                 .sodium(35)
                 .carbohydrate(30)
