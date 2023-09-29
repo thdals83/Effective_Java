@@ -1,8 +1,7 @@
-package Chapter_1.Item_2;
+package Chapter_2.Item_2;
 
 import java.util.EnumSet;
 import java.util.Objects;
-import java.util.Set;
 
 public class EX_4 {
 	public static void main(String[] args) {

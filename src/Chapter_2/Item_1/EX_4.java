@@ -1,6 +1,4 @@
-package Chapter_1.Item_1;
-
-import java.util.EnumSet;
+package Chapter_2.Item_1;
 
 public class EX_4 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Chapter_1.Item_4;
+package Chapter_2.Item_4;
 
 public class EX_1 {
 }

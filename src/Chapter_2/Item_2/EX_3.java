@@ -1,4 +1,4 @@
-package Chapter_1.Item_2;
+package Chapter_2.Item_2;
 
 /*
     빌더 패턴

@@ -1,4 +1,4 @@
-package Chapter_1.Item_2;
+package Chapter_2.Item_2;
 
 /*
     생성자에 매개변수가 많다면 빌더를 고려하라
