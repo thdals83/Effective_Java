@@ -11,6 +11,8 @@ package Chpater_4.Item_17;
 - 자신 외에는 내부의 가변 컴포넌트에 접근할 수 없도록 한다.
 * */
 
+import java.math.BigInteger;
+
 // 아래 메서드들은 인스턴스 자신을 주는게아닌, 새로운 인스턴스를 만들어 반환한다.
 // 이는 함수형 프로그래밍
 final class Complex {
@@ -66,9 +68,9 @@ class threadSafe_예시 {
 
 불변 객체는 그 자체로 실패 원자성을 제공한다.
 - 내부 상태가 바뀌지 않기 때문에 불일치 상태에 빠질 일이 없음
-
+------------------------------------------------------------
 불변 클래스의 단점
-- 값의 가짓수가 많은데 이를 모두 불변 객체로 만들면 비용이 많이 나감
+- 값이 다르면 다 독립된 인스턴스로 생성해야 함 ->  비용이 많이 나감
 EX) 백만 비트짜리 BinInteger에서 비트를 하나 바꿔야 할 때, 단지 한 비트만 다른 것을 만들기 위해 시간과 공간을 잡아 먹음
 BinInteger moby = ...;
 moby = moby.flipBit(0)
@@ -84,13 +86,26 @@ BigInteger에서 지수 연산과 같은 다단계 연산이 발생할 때, 불�
 다단계 연산을 예측하여 기본 기능을 제공한다.
 Math package를 가보면 package-rpivate 형태로 클래스들을 제공하고 있는데 이들을 '가변 동반 클래스'라고 한다.
 
-2. 가변 동반 클래스와 불변 클래스를 public으로 제공
-- 클라이언트들이 원하는 복잡한 연산들을 정확히 예측 할 수 없으면 public으로 제공한다.
-  예시가 바로 String의 StringBuilder임
-  
-불변 클래스를 만드는 여러방법
-1. final 클래스로 선언
-2. 모든 생성자를 private 혹은 package-private으로 설정하고 public정적 팩터리 제공
+2. 정적 팩터리 제공
+------------------------------------------------------------
 * */
+class Test {
+	/*
+BigInteger와 BigDecimal은 둘다 재정의 할 수 있게 설계됨
+이 때문에 상속받은 새로운 클래스를 생성할 경우, 자식 클래스는 가변 클래스 일 수 있음
+그래서 사용할 때 thread safe하다고 썼지만 그렇지 않을 수도 있다. 그래서 타입을 확인해 주어야함
+* */
+	public static BigInteger safeInstance(BigInteger val) {
+		return val.getClass() == BigInteger.class ? val : new BigInteger(val.toByteArray());
+	}
+}
+/*
+정리
+- 클래스가 꼭 필요한 경우가 아니면 불변이어야 한다.
+- 불변으로 만들 수 없는 클래스는, 변경 할 수 있는 부분을 최소한으로 만든다.
+- 다른 합당한 이유가 없으면 모든 필드는 private final
+- 
+* */
+
 public class EX_1 {
 }
