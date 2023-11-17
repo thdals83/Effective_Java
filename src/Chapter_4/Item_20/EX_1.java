@@ -1,4 +1,4 @@
-package Chpater_4.Item_20;
+package Chapter_4.Item_20;
 
 import java.util.AbstractList;
 import java.util.List;

@@ -1,9 +1,7 @@
-package Chpater_4.Item_16;
+package Chapter_4.Item_16;
 
 /* public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라
 * */
-
-import java.awt.*;
 
 //데이터 필드에 직접 접근하기 대문에 캡슐화의 이점을 제공하지 못함
 class Point1 {

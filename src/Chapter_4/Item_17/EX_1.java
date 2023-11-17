@@ -1,4 +1,4 @@
-package Chpater_4.Item_17;
+package Chapter_4.Item_17;
 
 /* 변경 가능성을 최소화하라
 

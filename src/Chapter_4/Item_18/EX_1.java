@@ -1,4 +1,4 @@
-package Chpater_4.Item_18;
+package Chapter_4.Item_18;
 
 /* 상속 보다는 컴포지션을 사용하라
 이번 아이템에서 이야기 하는 상속은 클래스가 다른 클래스를 확장하는 구현 상속이다.
@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 
 class ex1<E> extends HashSet<E> {

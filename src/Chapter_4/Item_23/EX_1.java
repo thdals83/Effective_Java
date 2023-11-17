@@ -1,4 +1,4 @@
-package Chpater_4.Item_23;
+package Chapter_4.Item_23;
 
 /* 태그 달린 클래스보다는 클래스 계층구조를 활용하라
 * */

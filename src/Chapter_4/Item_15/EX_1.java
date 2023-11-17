@@ -1,4 +1,4 @@
-package Chpater_4.Item_15;
+package Chapter_4.Item_15;
 
 import java.util.Arrays;
 import java.util.Collections;
