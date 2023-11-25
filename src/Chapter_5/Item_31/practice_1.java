@@ -1,4 +1,4 @@
-package Chapter_5;
+package Chapter_5.Item_31;
 
 /*
 제네릭의 장점
@@ -69,7 +69,7 @@ class Class_ex4<K extends Number> {
 }
 
 /*
-Number의 부모 타입들이 가능하다. EX) Integer, Short, Double, Long 등의
+Number의 자식 타입들이 가능하다. EX) Integer, Short, Double, Long 등의
 - "?"는 클래스나 인터페이스에는 불가능하다.
 * */
 //class Class_ex5<? extends Number> {}
