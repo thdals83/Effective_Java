@@ -1,4 +1,4 @@
-package Chapter_5.Item_31;
+package Chapter_5;
 
 /*
 제네릭의 장점
