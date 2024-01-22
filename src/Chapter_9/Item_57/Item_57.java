@@ -1,7 +1,4 @@
-package Chpater_9.Item_57;
-
-import javax.lang.model.element.Element;
-import java.util.Iterator;
+package Chapter_9.Item_57;
 
 /* 지역변수의 범위를 최소화 하라
 - 지역변수의 유효 범위를 최소로 줄이면 코드 가독성과 유지보수성이 높아지고 오류 가능성은 낮아진다.

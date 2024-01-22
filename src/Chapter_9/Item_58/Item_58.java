@@ -1,12 +1,10 @@
-package Chpater_9.Item_58;
+package Chapter_9.Item_58;
 
 
 
-import javax.lang.model.element.Element;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 
 /* 전통적인 for문 보다는 for-each 문을 사용하라
